@@ -1973,7 +1973,7 @@ footer {
 }
 
 .contact-details a {
-  color: inherit;           /* dziedziczy kolor tekstu z otaczającego <li> */
+  color: inherit !important;           /* dziedziczy kolor tekstu z otaczającego <li> */
   text-decoration: none;    /* usuwa podkreślenie */
 }
 
