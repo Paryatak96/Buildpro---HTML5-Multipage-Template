@@ -2057,32 +2057,3 @@ footer {
   color: #aaa;
   margin-left: 5px;
 }
-
-.wrapper-header-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-/* Domyślny rozmiar dla dużych ekranów */
-.wrapper-header-img h1 {
-  font-size: 5rem;
-}
-
-/* Mniejsze ekrany: np. tablet i telefon */
-@media (max-width: 768px) {
-  .wrapper-header-img h1 {
-    font-size: 3rem;
-  }
-}
-
-/* Jeszcze mniejsze ekrany: np. smartfony w pionie */
-@media (max-width: 480px) {
-  .wrapper-header-img h1 {
-    font-size: 1.6rem;
-  }
-}
