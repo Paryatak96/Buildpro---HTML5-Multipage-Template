@@ -1971,3 +1971,37 @@ footer {
   flex-wrap: wrap;
   text-align: left; /* dla spójności kart */
 }
+
+.contact-details a {
+  color: inherit;           /* dziedziczy kolor tekstu z otaczającego <li> */
+  text-decoration: none;    /* usuwa podkreślenie */
+}
+
+.contact-details a:hover {
+  text-decoration: underline; /* opcjonalnie — podkreślenie po najechaniu */
+}
+
+.email-hint {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-left: 5px;
+}
+
+/* Domyślny rozmiar dla dużych ekranów */
+.wrapper-header-img h1 {
+  font-size: 5rem;
+}
+
+/* Mniejsze ekrany: np. tablet i telefon */
+@media (max-width: 768px) {
+  .wrapper-header-img h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Jeszcze mniejsze ekrany: np. smartfony w pionie */
+@media (max-width: 480px) {
+  .wrapper-header-img h1 {
+    font-size: 1.6rem;
+  }
+}
