@@ -856,7 +856,7 @@ header {
 -------------------------------------------------------- */
 
 
-.wrapper-header-img {
+/* .wrapper-header-img {
 	min-height: 900px;
 	background-repeat: no-repeat;
 	background-position: center 0;
@@ -880,7 +880,78 @@ header {
 
 .wrapper-header-img .container h1 span {
 	color: #ffbc13;
+} */
+
+/* .wrapper-header-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
+
+
+.wrapper-header-img h1 {
+  font-size: 5rem;
+}
+
+
+@media (max-width: 768px) {
+  .wrapper-header-img h1 {
+    font-size: 3rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .wrapper-header-img h1 {
+    font-size: 1.6rem;
+  }
+} */
+
+.wrapper-header-img {
+  min-height: 100dvh; /* zamiast sztywnego 900px — bardziej mobilne */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll; /* lepsze na mobile niż 'fixed' */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px; /* dodaj padding, żeby tekst nie kleił się do boków */
+}
+
+.wrapper-header-img .container {
+  color: #fff;
+}
+
+.wrapper-header-img .container h1 {
+  margin-bottom: 30px;
+  font-size: 5rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.wrapper-header-img .container h1 span {
+  color: #ffbc13;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 768px) {
+  .wrapper-header-img .container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper-header-img .container h1 {
+    font-size: 1.5rem;
+  }
+}
+
 
 
 /* -------------------------------------------------------
@@ -1985,6 +2056,16 @@ footer {
   font-size: 0.9em;
   color: #aaa;
   margin-left: 5px;
+}
+
+.wrapper-header-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 /* Domyślny rozmiar dla dużych ekranów */
