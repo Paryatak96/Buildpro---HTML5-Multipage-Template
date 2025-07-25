@@ -1974,7 +1974,7 @@ footer {
 
 .contact-details a {
   color: inherit !important;           /* dziedziczy kolor tekstu z otaczającego <li> */
-  text-decoration: none;    /* usuwa podkreślenie */
+  text-decoration: none !important;    /* usuwa podkreślenie */
 }
 
 .contact-details a:hover {
